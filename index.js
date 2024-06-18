@@ -21,10 +21,15 @@ let images = [
         name: "chiara2",
         src: "images/about.jpg"
     },
+    {
+        name: "foto",
+        src: "images/IMG_6423.JPG"
+    },
 ]
 
 document.getElementById("chiara").src = images[0].src;
 document.getElementById("chiara2").src = images[1].src;
+document.getElementById("foto").src = images[2].src;
 
 
 
