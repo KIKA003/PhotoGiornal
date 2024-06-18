@@ -3,10 +3,18 @@ body {
     background: linear-gradient(90deg, rgba(255, 243, 207, 1) 21%, rgba(201, 215, 221, 1) 85%);
     color: #637A9F;
     font-family: 'Nunito', sans-serif;
-    text-transform: uppercase;
     margin: 0;
     padding: 18px 72px !important;
     height: 100vh;
+}
+
+
+.upper-text {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .nav-container,
@@ -81,7 +89,7 @@ body {
 
 .folder-container:nth-child(2) a {
     position: absolute;
-    right: 21.5%;
+    right: 24.5%;
     top: 50%;
 }
 
@@ -95,17 +103,92 @@ body {
     color: #637A9F;
     margin: 0;
     font-size: 12px;
-    position: absolute;
-    bottom: 18px;
+    padding: 20px 0;
 }
 
-@media (min-width: 669px) and (max-width: 1160px){
+
+.about-container {
+    display: flex;
+    column-gap: 49px;
+    padding-top: 20px;
+}
+
+.about-img {
+    width: 410px;
+    height: 600px;
+}
+
+.ig-link {
+    color: #637A9F;
+    text-decoration: none;
+}
+
+.ig-link:hover {
+    color: #637A9F;
+    text-decoration: underline;
+}
+
+.blue-text {
+    color: #637A9F;
+}
+
+.diary-container {
+    margin: 46px 0px;
+}
+
+.diary-images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 22px;
+    row-gap: 33px;
+}
+
+.diary-img {
+    height: 300px;
+    margin-top: 12px;
+}
+
+
+@media (min-width: 1160px) {
+    .diary-img {
+        height: 410px;
+    }
+
+    .diary-img:hover {
+        cursor: zoom-in;
+        transition: .5s;
+        transition-delay: 90s;
+        /* how long before the img automatically returns to original size */
+        transition-property: transform;
+        transform: scale(1);
+        z-index: 999;
+        position: sticky;
+
+        /* this and z-index should ensure that the zoomed img is always displayed on top of any other element */
+    }
+
+    .diary-img:active {
+        cursor: zoom-out;
+        overflow: auto;
+        /* Enable scroll if needed */
+        transition: 0s;
+        transition-delay: 0.05s;
+        transition-property: transform;
+        transform: scale(1.7);
+        /* set zoom level */
+        transform-origin: 0% 0%;
+        /* set img position */
+        z-index: 1000;
+    }
+}
+
+@media (min-width: 669px) and (max-width: 1160px) {
     .folder-container:nth-child(1) a {
         left: 27%;
     }
 
     .folder-container:nth-child(2) a {
-        right: 18.5%;
+        right: 25.5%;
     }
 }
 
@@ -114,7 +197,11 @@ body {
         width: 45%;
         height: 48%;
     }
-    
+
+    .about-container {
+        row-gap: 20px;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 500px) and (max-width: 669px) {
@@ -134,7 +221,12 @@ body {
     }
 
     .folder-container:nth-child(2) a {
-        left: 33%;
-        top: 71%;
+        left: 45%;
+        top: 70%;
+    }
+
+    .about-container {
+        row-gap: 20px;
+        flex-direction: column;
     }
 }
