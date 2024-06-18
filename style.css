@@ -6,6 +6,7 @@ body {
     text-transform: uppercase;
     margin: 0;
     padding: 18px 72px !important;
+    height: 100vh;
 }
 
 .nav-container,
@@ -19,31 +20,121 @@ body {
     font-weight: 800 !important;
 }
 
-.underline{
+.underline {
     height: 1px;
     width: 0px;
     background-color: #637A9F;
 }
 
-.fixed-underline{
+.fixed-underline {
     height: 1px;
     width: 100%;
     background-color: #637A9F;
 }
 
-.nav-item a,.nav-item a:visited {
+.nav-item a,
+.nav-item a:visited {
     text-decoration: none;
     color: #637A9F;
     padding: 0;
 }
 
-.nav-item a:hover + .underline{
+.nav-item a:hover+.underline {
     width: 100%;
     transition: width 0.3s;
 }
 
-
 .nav-links {
     justify-content: space-between;
     width: 188px;
+}
+
+.homepage-container {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    align-items: center;
+}
+
+.folder-container {
+    width: 40%;
+    height: 80%;
+}
+
+.folder-container a,
+:visited,
+:active {
+    color: white;
+    text-decoration: none;
+}
+
+.folder-container a:hover {
+    opacity: 0%;
+    transition: opacity 0.5s;
+}
+
+.folder-container:nth-child(1) a {
+    position: absolute;
+    left: 26%;
+    top: 50%;
+}
+
+.folder-container:nth-child(2) a {
+    position: absolute;
+    right: 21.5%;
+    top: 50%;
+}
+
+.folder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.credits {
+    color: #637A9F;
+    margin: 0;
+    font-size: 12px;
+    position: absolute;
+    bottom: 18px;
+}
+
+@media (min-width: 669px) and (max-width: 1160px){
+    .folder-container:nth-child(1) a {
+        left: 27%;
+    }
+
+    .folder-container:nth-child(2) a {
+        right: 18.5%;
+    }
+}
+
+@media (min-width: 669px) and (max-width: 992px) {
+    .folder-container {
+        width: 45%;
+        height: 48%;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 669px) {
+    .homepage-container {
+        flex-direction: column;
+        padding: 14px 0;
+    }
+
+    .folder-container {
+        margin-bottom: 14px;
+        width: 83%;
+    }
+
+    .folder-container:nth-child(1) a {
+        left: 45%;
+        top: 31%;
+    }
+
+    .folder-container:nth-child(2) a {
+        left: 33%;
+        top: 71%;
+    }
 }
