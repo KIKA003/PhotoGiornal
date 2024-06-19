@@ -28,12 +28,24 @@ let images = [
         name: "praga4",
         src: "images/IMG_4648.jpg"
     },
+    {
+        name: "praga5",
+        src: "images/IMG_4961.jpg"
+    },
+    {
+        name: "praga6",
+        src: "images/IMG_6423.JPG"
+    },
 ]
 
 document.getElementById("praga").src = images[1].src;
 document.getElementById("praga2").src = images[2].src;
 document.getElementById("praga3").src = images[3].src;
 document.getElementById("praga4").src = images[4].src;
+document.getElementById("praga5").src = images[5].src;
+document.getElementById("praga6").src = images[6].src;
+
+
 
 
 

@@ -176,8 +176,6 @@ body {
         transition-property: transform;
         transform: scale(1.7);
         /* set zoom level */
-        transform-origin: 0% 0%;
-        /* set img position */
         z-index: 1000;
     }
 }
