@@ -59,14 +59,16 @@ body {
 
 .homepage-container {
     display: flex;
-    justify-content: space-around;
-    height: 90%;
-    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 55px;
+    padding: 51px 0;
+    justify-content: center;
 }
 
 .folder-container {
-    width: 40%;
-    height: 80%;
+    width: 530px;
+    height: 530px;
 }
 
 .folder-container a,
@@ -79,24 +81,22 @@ body {
 .folder-container a:hover {
     opacity: 0%;
     transition: opacity 0.5s;
+    cursor: pointer;
 }
 
-.folder-container:nth-child(1) a {
-    position: absolute;
-    left: 26%;
-    top: 50%;
-}
-
-.folder-container:nth-child(2) a {
-    position: absolute;
-    right: 24.5%;
-    top: 50%;
-}
 
 .folder-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
+}
+
+.folder-text {
+    position: relative;
+    bottom: 50%;
+    left: 45%;
+    font-size: 20px;
 }
 
 .credits {
@@ -136,10 +136,22 @@ body {
     margin: 46px 0px;
 }
 
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 56px;
+}
+
+.header p {
+    margin: 10px 0 32px;
+}
+
 .diary-images {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 22px;
+    column-gap: 77px;
     row-gap: 33px;
 }
 
@@ -154,20 +166,20 @@ body {
         height: 410px;
     }
 
-    .diary-img:hover {
+    /* .diary-img:hover {
         cursor: zoom-in;
         transition: .5s;
         transition-delay: 90s;
         /* how long before the img automatically returns to original size */
-        transition-property: transform;
+    /* transition-property: transform;
         transform: scale(1);
         z-index: 999;
-        position: sticky;
+        position: sticky; */
 
-        /* this and z-index should ensure that the zoomed img is always displayed on top of any other element */
-    }
+    /* this and z-index should ensure that the zoomed img is always displayed on top of any other element */
 
-    .diary-img:active {
+    .diary-img:hover {
+        left: 50%;
         cursor: zoom-out;
         overflow: auto;
         /* Enable scroll if needed */
@@ -178,6 +190,7 @@ body {
         /* set zoom level */
         z-index: 1000;
     }
+
 }
 
 @media (min-width: 669px) and (max-width: 1160px) {
