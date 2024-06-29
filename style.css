@@ -160,46 +160,29 @@ body {
     margin-top: 12px;
 }
 
+.diary-img:hover {
+    left: 50%;
+    cursor: zoom-out;
+    overflow: auto;
+    /* Enable scroll if needed */
+    transition: 0s;
+    transition-delay: 0.05s;
+    transition-property: transform;
+    transform: scale(1.7);
+    /* set zoom level */
+    z-index: 1000;
+}
+
+@media(max-width: 1480px){
+    .diary-img:hover {
+        transform: scale(1.4);
+    }
+}
+
 
 @media (min-width: 1160px) {
     .diary-img {
         height: 410px;
-    }
-
-    /* .diary-img:hover {
-        cursor: zoom-in;
-        transition: .5s;
-        transition-delay: 90s;
-        /* how long before the img automatically returns to original size */
-    /* transition-property: transform;
-        transform: scale(1);
-        z-index: 999;
-        position: sticky; */
-
-    /* this and z-index should ensure that the zoomed img is always displayed on top of any other element */
-
-    .diary-img:hover {
-        left: 50%;
-        cursor: zoom-out;
-        overflow: auto;
-        /* Enable scroll if needed */
-        transition: 0s;
-        transition-delay: 0.05s;
-        transition-property: transform;
-        transform: scale(1.7);
-        /* set zoom level */
-        z-index: 1000;
-    }
-
-}
-
-@media (min-width: 669px) and (max-width: 1160px) {
-    .folder-container:nth-child(1) a {
-        left: 27%;
-    }
-
-    .folder-container:nth-child(2) a {
-        right: 25.5%;
     }
 }
 
@@ -224,16 +207,6 @@ body {
     .folder-container {
         margin-bottom: 14px;
         width: 83%;
-    }
-
-    .folder-container:nth-child(1) a {
-        left: 45%;
-        top: 31%;
-    }
-
-    .folder-container:nth-child(2) a {
-        left: 45%;
-        top: 70%;
     }
 
     .about-container {
