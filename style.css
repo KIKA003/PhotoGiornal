@@ -175,7 +175,7 @@ body {
 
 @media(max-width: 1480px){
     .diary-img:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
     }
 }
 
