@@ -36,7 +36,6 @@ let images = [
 ]
  
 let penombra = [
-    
         { 
         name: "penombra1",
         src: "penombra/IMG_6636-2.jpg"
@@ -47,16 +46,16 @@ let penombra = [
     },    
 ]
 
+document.getElementById("penombra1").src = penombra[0].src;
+document.getElementById ("penombra2"). src = penombra[1].src;
+document.getElementById("praga").src = images[0].src;
+document.getElementById("praga2").src = images[1].src;
+document.getElementById("praga3").src = images[2].src;
+document.getElementById("praga4").src = images[3].src;
+document.getElementById("praga5").src = images[4].src;
 
-document.getElementById("praga").src = images[1].src;
-document.getElementById("praga2").src = images[2].src;
-document.getElementById("praga3").src = images[3].src;
-document.getElementById("praga4").src = images[4].src;
-document.getElementById("praga5").src = images[5].src;
 
 
-document.getElementById("penombra1").src = penombra[1].src;
-document.getElementById("penombra1").src = penombra[2].src;
 
 
 

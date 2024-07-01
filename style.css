@@ -132,7 +132,7 @@ body {
     color: #637A9F;
 }
 
-.diary-container {
+.images-container {
     margin: 46px 0px;
 }
 
@@ -148,19 +148,19 @@ body {
     margin: 10px 0 32px;
 }
 
-.diary-images {
+.images {
     display: flex;
     flex-wrap: wrap;
     column-gap: 77px;
     row-gap: 33px;
 }
 
-.diary-img {
+.img {
     height: 300px;
     margin-top: 12px;
 }
 
-.diary-img:hover {
+.img:hover {
     left: 50%;
     cursor: zoom-out;
     overflow: auto;
@@ -174,14 +174,14 @@ body {
 }
 
 @media(max-width: 1480px){
-    .diary-img:hover {
+    .img:hover {
         transform: scale(1.5);
     }
 }
 
 
 @media (min-width: 1160px) {
-    .diary-img {
+    .img {
         height: 410px;
     }
 }
