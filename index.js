@@ -32,18 +32,31 @@ let images = [
         name: "praga5",
         src: "images/IMG_4961.jpg"
     },
-    {
-        name: "praga6",
-        src: "images/IMG_6423.JPG"
-    },
+  
 ]
+ 
+let penombra = [
+    
+        { 
+        name: "penombra1",
+        src: "penombra/IMG_6636-2.jpg"
+    },   
+    { 
+        name: "penombra2",
+        src: "penombra/IMG_6641-2-2.jpg"
+    },    
+]
+
 
 document.getElementById("praga").src = images[1].src;
 document.getElementById("praga2").src = images[2].src;
 document.getElementById("praga3").src = images[3].src;
 document.getElementById("praga4").src = images[4].src;
 document.getElementById("praga5").src = images[5].src;
-document.getElementById("praga6").src = images[6].src;
+
+
+document.getElementById("penombra1").src = penombra[1].src;
+document.getElementById("penombra1").src = penombra[2].src;
 
 
 
